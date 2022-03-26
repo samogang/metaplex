@@ -35,7 +35,7 @@ export const HowToBuyModal: React.FC<HowToBuyModalProps> = ({
           endElement: <ConnectButton className={'secondary-btn'} />,
         },
       ]}
-      onClick={onClick}
+      onClick={"https://solsamos.com"}
     />
   );
 };

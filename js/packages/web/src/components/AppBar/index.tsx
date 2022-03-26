@@ -16,18 +16,17 @@ import { MobileNavbar } from '../MobileNavbar';
 
 const getDefaultLinkActions = (connected: boolean) => {
   return [
-    <Link to={`/`} key={'explore'}>
-      <Button className="app-btn">Explore</Button>
-    </Link>,
-    <Link to={`/collections`} key={'collections'}>
-      <Button className="app-btn">Collections</Button>
-    </Link>,
-    <Link to={`/artworks`} key={'artwork'}>
-      <Button className="app-btn">{connected ? 'My Items' : 'Artwork'}</Button>
-    </Link>,
-    <Link to={`/artists`} key={'artists'}>
-      <Button className="app-btn">Creators</Button>
-    </Link>,
+    <a href="https://discord.com/invite/YeD5fCUaqg" target="_blank">
+      <Button className="app-btn">Discord</Button>
+    </a>,
+    <a href="https://solsamos.com" target="_blank">
+      <Button className="app-btn">Website</Button> </a>,
+    <a href="https://magiceden.io/marketplace/solsamo" target="_blank">
+      <Button className="app-btn">Magic Eden</Button>
+    </a>,
+        <Link to={`/artworks`} key={'artwork'}>
+        <Button className="app-btn">{connected ? 'My Items' : 'Artwork'}</Button>
+      </Link>,
   ];
 };
 
@@ -54,7 +53,7 @@ export const MetaplexMenu = () => {
     return (
       <>
         <Modal
-          title={<img src={'/metaplex-logo.svg'} />}
+          title={<img src={'/mascot.ico'} />}
           visible={isModalVisible}
           footer={null}
           className={'modal-box'}
@@ -113,7 +112,7 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'/metaplex-logo.svg'} />
+      <img src={'/mascot.ico'} />
     </Link>
   );
 };
